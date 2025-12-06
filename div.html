@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+body{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.div1{
+  height: 450px;
+  width:300px;
+  box-shadow:0px 0px 50px red;
+  background: black;
+  
+}  
+.div2{
+  height:340px;
+  width:214px;
+  background: black;
+  margin:0px auto;
+}
+input{
+  height:45px;
+  width:200px;
+  border-radius:30px;
+  margin:10px 4px;
+  background: black;
+  outline: none;
+  border: solid red;
+  color:red;
+  font-size:20px;
+}
+input::placeholder{
+  color:red;
+} 
+
+
+::selection{
+  background: red;
+  color:black;
+}
+
+.button{
+  height:45px;
+  width:200px;
+  margin:10px 7px;
+  border:solid red;
+  color:red;
+  border-radius:30px;
+  background: black;
+  font-size:20px;
+  
+}  
+.button:active{
+background:linear-gradient(red, black);
+}
+.button::selection{
+  background: red;
+  color:black;
+}
+
+.h1{
+  margin:20px 0px;
+  color :red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+</style>
+<body>
+  <div class="div1">
+    <h1 class="h1">sign up</h1>
+    <div class="div2">
+      <input class="in1" type="text" placeholder="first name">
+            <input class="in1" type="text" placeholder="last name">
+            <input class="in1" type="password" placeholder="password">
+            <input class="in1" type="password" placeholder="confirm password">
+            <button class="button" type="submit">submit</button>
+    </div>
+  </div>
+</body>
+
+</html>
